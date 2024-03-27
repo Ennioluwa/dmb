@@ -4,13 +4,8 @@ import Logo from "@/components/logo";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import React from "react";
-
-const navLinks = [
-  { title: "services", href: "/" },
-  { title: "about us", href: "/" },
-  { title: "company", href: "/" },
-  { title: "support", href: "/" },
-];
+import MobileSidebar from "./mobile-sidebar";
+import { navLinks } from "@/data/navData";
 
 const Navbar = () => {
   return (
@@ -31,12 +26,11 @@ const Navbar = () => {
             ))}
           </div>
         </div>
-        <div className=" flex items-center gap-5">
-          <Button className=" hidden sm:block" variant={"ghost"}>
-            Login
-          </Button>
+        <div className=" lg:inline-flex items-center gap-5 hidden">
+          <Button variant={"ghost"}>Login</Button>
           <Button>Open an account</Button>
         </div>
+        <MobileSidebar />
       </nav>
     </div>
   );
