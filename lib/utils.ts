@@ -7,5 +7,7 @@ export function cn(...inputs: ClassValue[]) {
 
 export const scrollToId = (id: string) => {
   const element = document.getElementById(id);
+  console.log(element, "element");
+
   element?.scrollIntoView({ behavior: "smooth" });
 };

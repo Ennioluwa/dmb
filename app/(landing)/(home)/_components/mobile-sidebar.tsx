@@ -12,22 +12,31 @@ import { navLinks } from "@/data/navData";
 import { scrollToId } from "@/lib/utils";
 import { Menu, MoveUpRight } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 
 const MobileSidebar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <Sheet>
-      <SheetTrigger className=" lg:hidden" asChild>
-        <Button className=" lg:hidden px-4" variant={"ghost"}>
-          <Menu className=" cursor-pointer block lg:hidden" size={24} />
-        </Button>
-      </SheetTrigger>
+    <Sheet open={isOpen} onOpenChange={setIsOpen}>
+      <Button
+        onClick={() => setIsOpen(true)}
+        className=" lg:hidden px-4"
+        variant={"ghost"}
+      >
+        <Menu className=" cursor-pointer block lg:hidden" size={24} />
+      </Button>
+      {/* <SheetTrigger className=" lg:hidden" asChild> */}
+      {/* </SheetTrigger> */}
       <SheetContent className="  sm:border-l border-gray-600 bg-black w-full max-w-full py-4">
         <SheetHeader className=" flex flex-col gap-40">
           <Logo />
           <div className="flex flex-col gap-3">
             {navLinks.map((item, index) => (
               <Button
-                onClick={() => scrollToId(item.href)}
+                onClick={() => {
+                  scrollToId(item.href);
+                  setIsOpen(false);
+                }}
                 key={index}
                 className=" w-full capitalize gap-4 bg-black"
                 variant={"outline"}
@@ -44,7 +53,13 @@ const MobileSidebar = () => {
             {/* <Button className=" w-full" variant={"ghost"}>
               Login
             </Button> */}
-            <Button onClick={() => scrollToId("contact")} className=" w-full">
+            <Button
+              onClick={() => {
+                scrollToId("contact");
+                setIsOpen(false);
+              }}
+              className=" w-full"
+            >
               Contact Us
             </Button>
           </div>

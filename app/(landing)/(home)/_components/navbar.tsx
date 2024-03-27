@@ -10,7 +10,7 @@ import { scrollToId } from "@/lib/utils";
 
 const Navbar = () => {
   return (
-    <div id="home" className=" bg-black h-20 ">
+    <div id="hero" className=" bg-black h-20 ">
       <nav className=" container h-full w-full flex justify-between items-center">
         <div className=" flex items-center gap-12">
           <Logo className=" shrink-0" />

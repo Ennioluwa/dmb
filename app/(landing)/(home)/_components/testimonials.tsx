@@ -19,7 +19,7 @@ const Testimonials = () => {
         <CarouselContent>
           “”
           {testimonialData.map((testimonial, index) => (
-            <CarouselItem key={index}>
+            <CarouselItem className="pl-0 pr-0 px-6" key={index}>
               <div className=" lg:container flex flex-col lg:flex-row lg:items-center gap-10 lg:px-0">
                 <div className=" container lg:flex-1 py-20 lg:pr-0 lg:pl-8 space-y-6">
                   <h2>{testimonial.title}</h2>

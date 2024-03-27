@@ -28,7 +28,7 @@ const ScrollToTop = () => {
       {isVisible && (
         <Button
           className=" w-fit px-4 rounded-full"
-          onClick={() => scrollToId("home")}
+          onClick={() => scrollToId("hero")}
         >
           <MoveUp size={20} />
         </Button>
