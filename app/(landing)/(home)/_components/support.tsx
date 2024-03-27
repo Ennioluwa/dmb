@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Support = () => {
   return (
-    <section className=" bg-white text-[#595959] py-20">
+    <section className=" bg-white text-[#595959] lg:py-20 pb-20">
       <div className=" lg:container flex flex-col lg:flex-row lg:items-center gap-10 lg:px-0">
         <div className=" lg:flex-1 w-full h-full max-h-[34rem] lg:max-h-max mx-auto overflow-clip">
           <AspectRatio ratio={1 / 1}>

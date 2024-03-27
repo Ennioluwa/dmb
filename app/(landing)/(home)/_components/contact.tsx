@@ -79,7 +79,7 @@ const Contact = () => {
           Reach out to us, and we'll get back to you promptly.
         </p>
         <div className=" flex flex-col lg:flex-row lg:items-center gap-20">
-          <div className=" flex flex-col gap-12 lg:flex-1 order-2 lg:order-1">
+          <div className=" flex flex-col gap-12 w-full  max-w-xl lg:max-w-full mx-auto lg:flex-1 order-2 lg:order-1">
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}

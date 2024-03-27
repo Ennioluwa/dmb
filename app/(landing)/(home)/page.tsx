@@ -6,13 +6,14 @@ import Footer from "./_components/footer";
 import GetStarted from "./_components/get-started";
 import HeroPage from "./_components/hero-page";
 import Navbar from "./_components/navbar";
+import ScrollToTop from "./_components/scroll-to-top";
 import Services from "./_components/services";
 import Support from "./_components/support";
 import Testimonials from "./_components/testimonials";
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className="relative">
       <Navbar />
       <HeroPage />
       <FinancialStack />
@@ -24,6 +25,7 @@ const LandingPage = () => {
       <Contact />
       <GetStarted />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
