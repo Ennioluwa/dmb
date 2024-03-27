@@ -13,8 +13,8 @@ const Testimonials = () => {
             ambitious business
           </h2>
           <p>
-            Thousands of forward-thinking businesses rely on Brass everyday to
-            turbo-charge their business financial operations
+            Thousands of forward-thinking businesses rely on the Dew MFB
+            everyday to turbo-charge their business financial operations
           </p>
           <h3 className="pt-24 font-light">
             “The ease of opening an account completely won me over. The app is
@@ -34,7 +34,7 @@ const Testimonials = () => {
             </svg>
           </div>
         </div>
-        <div className=" lg:flex-1 w-full h-full">
+        <div className=" lg:flex-1 w-full h-full max-h-[34rem] lg:max-h-max mx-auto overflow-clip">
           <AspectRatio ratio={1 / 1}>
             <Image
               src="/images/testimonial.png"
