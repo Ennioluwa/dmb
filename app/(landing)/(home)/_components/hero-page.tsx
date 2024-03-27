@@ -1,3 +1,5 @@
+"use client";
+
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -21,6 +23,7 @@ const HeroPage = () => {
               src="/images/recent.png"
               alt="Image"
               className="rounded-lg object-cover"
+              fill
             />
           </AspectRatio>
         </div>

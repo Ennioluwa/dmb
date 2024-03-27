@@ -1,6 +1,7 @@
+"use client";
+
 import { AspectRatio } from "@radix-ui/react-aspect-ratio";
 import Image from "next/image";
-import React from "react";
 
 const Blog = () => {
   return (
@@ -21,6 +22,7 @@ const Blog = () => {
                 src="/images/recent.png"
                 alt="Image"
                 className=" object-cover"
+                fill
               />
             </AspectRatio>
           </div>

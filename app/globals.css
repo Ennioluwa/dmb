@@ -98,9 +98,9 @@ body,
     @apply text-[1.5rem] leading-[1.5rem] font-semibold tracking-[-4%] text-white;
   }
   h6 {
-    @apply uppercase text-[1rem] leading-[1.5rem] font-normal tracking-[3%] text-gray;
+    @apply uppercase text-[1rem] leading-[1.5rem] font-normal tracking-[3%];
   }
   p {
-    @apply text-[1rem] tracking-normal font-normal leading-[1.5rem] text-gray;
+    @apply text-[1rem] tracking-normal font-normal leading-[1.5rem];
   }
 }

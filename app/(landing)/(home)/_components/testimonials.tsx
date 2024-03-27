@@ -1,6 +1,7 @@
+"use client";
+
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
-import React from "react";
 
 const Testimonials = () => {
   return (
@@ -36,6 +37,7 @@ const Testimonials = () => {
               src="/images/recent.png"
               alt="Image"
               className="rounded-lg object-cover"
+              fill
             />
           </AspectRatio>
         </div>

@@ -1,5 +1,6 @@
+"use client";
+
 import { faqData } from "@/data/faqData";
-import React from "react";
 import FaqAccordion from "./faq-accordion";
 import { Accordion } from "@/components/ui/accordion";
 
