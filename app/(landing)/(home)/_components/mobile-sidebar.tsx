@@ -9,6 +9,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { navLinks } from "@/data/navData";
+import { scrollToId } from "@/lib/utils";
 import { Menu, MoveUpRight } from "lucide-react";
 import Link from "next/link";
 
@@ -25,25 +26,27 @@ const MobileSidebar = () => {
           <Logo />
           <div className="flex flex-col gap-3">
             {navLinks.map((item, index) => (
-              <Link href={item.href} key={index} className=" group">
-                <Button
-                  className=" w-full capitalize gap-4 bg-black"
-                  variant={"outline"}
-                >
-                  {item.title}
-                  <MoveUpRight
-                    className=" group-hover:rotate-45 transition-transform duration-300 ease-in-out"
-                    size={14}
-                  />
-                </Button>
-              </Link>
+              <Button
+                onClick={() => scrollToId(item.href)}
+                key={index}
+                className=" w-full capitalize gap-4 bg-black"
+                variant={"outline"}
+              >
+                {item.title}
+                <MoveUpRight
+                  className=" group-hover:rotate-45 transition-transform duration-300 ease-in-out"
+                  size={14}
+                />
+              </Button>
             ))}
           </div>
           <div className="flex flex-col items-center gap-5 w-full">
-            <Button className=" w-full" variant={"ghost"}>
+            {/* <Button className=" w-full" variant={"ghost"}>
               Login
+            </Button> */}
+            <Button onClick={() => scrollToId("contact")} className=" w-full">
+              Contact Us
             </Button>
-            <Button className=" w-full">Contact Us</Button>
           </div>
         </SheetHeader>
       </SheetContent>

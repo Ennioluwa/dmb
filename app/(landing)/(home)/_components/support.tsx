@@ -2,6 +2,7 @@
 
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
+import { scrollToId } from "@/lib/utils";
 import Image from "next/image";
 
 const Support = () => {
@@ -38,7 +39,10 @@ const Support = () => {
             guidance tailored to your specific situation. Rest assured, we're
             always here to support your entrepreneurial journey.
           </p>
-          <Button className=" bg-black text-white hover:bg-black/90">
+          <Button
+            onClick={() => scrollToId("contact")}
+            className=" bg-black text-white hover:bg-black/90"
+          >
             Contact support
           </Button>
         </div>

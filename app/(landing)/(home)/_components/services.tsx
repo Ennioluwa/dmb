@@ -10,7 +10,7 @@ const Services = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <section className=" bg-white text-black">
+    <section id="services" className=" bg-white text-black">
       <div className=" py-20 container flex flex-col gap-6">
         <h2>
           Everything you need,

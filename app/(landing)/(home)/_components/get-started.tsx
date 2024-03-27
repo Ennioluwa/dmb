@@ -1,10 +1,11 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { scrollToId } from "@/lib/utils";
 
 const GetStarted = () => {
   return (
-    <section className=" bg-[#060809]">
+    <section onClick={() => scrollToId("contact")} className=" bg-[#060809]">
       <div className=" py-20 container flex flex-col items-center text-center gap-6 lg:gap-10">
         <h2>Get started — It&apos;s free</h2>
         <p className=" text-[#B4BAC6]">

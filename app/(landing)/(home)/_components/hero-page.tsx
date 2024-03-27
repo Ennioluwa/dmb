@@ -2,6 +2,7 @@
 
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
+import { scrollToId } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
 
@@ -15,7 +16,9 @@ const HeroPage = () => {
             Do more with a business account that comes with top-end financial
             tools and integrations to help grow your business.
           </p>
-          <Button className=" w-fit">Request a Consultation</Button>
+          <Button onClick={() => scrollToId("contact")} className=" w-fit">
+            Request a Consultation
+          </Button>
         </div>
         <div className=" lg:flex-1 w-full">
           <AspectRatio ratio={1 / 1}>

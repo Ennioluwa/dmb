@@ -14,7 +14,7 @@ import { testimonialData } from "@/data/testimonialData";
 
 const Testimonials = () => {
   return (
-    <section className=" bg-black">
+    <section id="testimonials" className=" bg-black">
       <Carousel className="w-full">
         <CarouselContent>
           “”

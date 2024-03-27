@@ -68,7 +68,7 @@ const Contact = () => {
   };
 
   return (
-    <section className=" bg-white text-black">
+    <section id="contact" className=" bg-white text-black">
       <div className=" py-20 container flex flex-col gap-6 overflow-clip">
         <h2 className=" lg:w-2/3 text-center lg:text-left">
           Chat with our team
