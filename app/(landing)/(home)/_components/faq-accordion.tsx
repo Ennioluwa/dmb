@@ -18,7 +18,7 @@ interface FaqAccordionProps {
 const FaqAccordion: FC<FaqAccordionProps> = ({ title, subtitle, index }) => {
   return (
     <AccordionItem value={`${index}`}>
-      <AccordionTrigger>{title}</AccordionTrigger>
+      <AccordionTrigger className=" text-left">{title}</AccordionTrigger>
       <AccordionContent>{subtitle}</AccordionContent>
     </AccordionItem>
   );
