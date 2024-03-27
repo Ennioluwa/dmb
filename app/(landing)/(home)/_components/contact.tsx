@@ -76,7 +76,7 @@ const Contact = () => {
         <p className=" text-center lg:text-left text-[#595959] ">
           Have a question or need assistance? Our friendly team is here to help.
           <br />
-          Reach out to us, and we'll get back to you promptly.
+          Reach out to us, and we&apos;ll get back to you promptly.
         </p>
         <div className=" flex flex-col lg:flex-row lg:items-center gap-20">
           <div className=" flex flex-col gap-12 w-full  max-w-xl lg:max-w-full mx-auto lg:flex-1 order-2 lg:order-1">

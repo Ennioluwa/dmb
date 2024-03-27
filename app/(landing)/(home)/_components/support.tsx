@@ -32,12 +32,12 @@ const Support = () => {
             experts are just a call or click away
             <br />
             <br />
-            No matter what challenges your business faces, you'll never go it
-            alone. Our 24/7 support team combines banking proficiency with a
+            No matter what challenges your business faces, you&apos;ll never go
+            it alone. Our 24/7 support team combines banking proficiency with a
             consultative approach to deliver personalized solutions. We take the
             time to understand your unique needs and financial goals, providing
-            guidance tailored to your specific situation. Rest assured, we're
-            always here to support your entrepreneurial journey.
+            guidance tailored to your specific situation. Rest assured,
+            we&apos;re always here to support your entrepreneurial journey.
           </p>
           <Button
             onClick={() => scrollToId("contact")}
