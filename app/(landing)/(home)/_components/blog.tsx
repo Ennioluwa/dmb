@@ -20,7 +20,7 @@ const Blog = () => {
           {blogData.map((blog, index) => (
             <div
               key={index}
-              className="border col-span-1 rounded-lg max-w-md mx-auto md:mx-0"
+              className="border col-span-1 w-full rounded-lg max-w-md mx-auto md:mx-0"
             >
               <div className="">
                 <AspectRatio ratio={39 / 24}>

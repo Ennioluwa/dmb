@@ -6,8 +6,8 @@ import Image from "next/image";
 const Testimonials = () => {
   return (
     <section className=" bg-black">
-      <div className=" container flex flex-col lg:flex-row lg:items-center gap-10 lg:px-0">
-        <div className="  lg:flex-1 py-10 pl-4 lg:pl-8 space-y-6">
+      <div className=" lg:container flex flex-col lg:flex-row lg:items-center gap-10 lg:px-0">
+        <div className=" container lg:flex-1 py-20 lg:pr-0 lg:pl-8 space-y-6">
           <h2>
             We are built for every <br />
             ambitious business
@@ -34,8 +34,8 @@ const Testimonials = () => {
             </svg>
           </div>
         </div>
-        <div className=" lg:flex-1 w-full h-full max-h-[34rem] lg:max-h-max mx-auto overflow-clip">
-          <AspectRatio ratio={1 / 1}>
+        <div className=" lg:flex-1 w-full h-full max-h-[34rem] lg:max-h-[40rem] mx-auto overflow-clip">
+          <AspectRatio ratio={1 / 1} className=" h-full">
             <Image
               src="/images/testimonial.png"
               alt="Image"
