@@ -15,12 +15,12 @@ const HeroPage = () => {
             Do more with a business account that comes with top-end financial
             tools and integrations to help grow your business.
           </p>
-          <Button className=" w-fit">Open an account - it's free</Button>
+          <Button className=" w-fit">Open an account - it&apos;s free</Button>
         </div>
         <div className=" lg:flex-1 w-full">
           <AspectRatio ratio={1 / 1}>
             <Image
-              src="/images/recent.png"
+              src="/images/hero.png"
               alt="Image"
               className="rounded-lg object-cover"
               fill

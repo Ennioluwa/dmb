@@ -15,7 +15,7 @@ const Services = () => {
         <h2>
           Everything you need,
           <br />
-          less of what you don't.
+          less of what you don&apos;t.
         </h2>
         <div className=" flex flex-col lg:flex-row lg:items-center gap-20">
           <div className=" flex flex-col lg:flex-1">
