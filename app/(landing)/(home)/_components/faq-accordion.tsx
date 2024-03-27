@@ -12,11 +12,12 @@ import {
 interface FaqAccordionProps {
   title: string;
   subtitle: string;
+  index: number;
 }
 
-const FaqAccordion: FC<FaqAccordionProps> = ({ title, subtitle }) => {
+const FaqAccordion: FC<FaqAccordionProps> = ({ title, subtitle, index }) => {
   return (
-    <AccordionItem value={title}>
+    <AccordionItem value={`${index}`}>
       <AccordionTrigger>{title}</AccordionTrigger>
       <AccordionContent>{subtitle}</AccordionContent>
     </AccordionItem>
