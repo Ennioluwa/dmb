@@ -43,7 +43,7 @@ const MobileSidebar = () => {
             <Button className=" w-full" variant={"ghost"}>
               Login
             </Button>
-            <Button className=" w-full">Open an account</Button>
+            <Button className=" w-full">Contact Us</Button>
           </div>
         </SheetHeader>
       </SheetContent>

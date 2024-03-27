@@ -1,4 +1,5 @@
 import Blog from "./_components/blog";
+import Contact from "./_components/contact";
 import Faq from "./_components/faq";
 import FinancialStack from "./_components/financial-stack";
 import Footer from "./_components/footer";
@@ -17,9 +18,10 @@ const LandingPage = () => {
       <FinancialStack />
       <Services />
       <Testimonials />
-      <Blog />
+      {/* <Blog /> */}
       <Support />
       <Faq />
+      <Contact />
       <GetStarted />
       <Footer />
     </div>

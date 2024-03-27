@@ -24,16 +24,19 @@ const Support = () => {
             We have a support team available for you 24/7
           </h2>
           <p className="">
-            Our support team are a mix of bankers and growth experts ready to
-            help you. With a Brass account, you get a team that is genuinely
-            seeking to understand your business and provide solutions for its
-            financial operations.
+            Our commitment to your success extends around the clock. With a
+            dedicated support team available 24 hours a day, 7 days a week, you
+            can count on prompt assistance whenever you need it. Whether you
+            have an urgent inquiry or simply want advice, our knowledgeable
+            experts are just a call or click away
             <br />
             <br />
-            Our support team are a mix of bankers and growth experts ready to
-            help you. With a Brass account, you get a team that is genuinely
-            seeking to understand your business and provide solutions for its
-            financial operations.
+            No matter what challenges your business faces, you'll never go it
+            alone. Our 24/7 support team combines banking proficiency with a
+            consultative approach to deliver personalized solutions. We take the
+            time to understand your unique needs and financial goals, providing
+            guidance tailored to your specific situation. Rest assured, we're
+            always here to support your entrepreneurial journey.
           </p>
           <Button className=" bg-black text-white hover:bg-black/90">
             Contact support

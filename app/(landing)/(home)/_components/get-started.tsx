@@ -12,7 +12,7 @@ const GetStarted = () => {
           <br />
           Open the last current account you will ever need for your business
         </p>
-        <Button className=" w-fit">Open an account — It&apos;s free</Button>
+        <Button className=" w-fit">Contact our 24/7 Support</Button>
       </div>
     </section>
   );

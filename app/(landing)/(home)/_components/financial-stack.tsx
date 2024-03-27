@@ -6,7 +6,7 @@ const FinancialStack = () => {
   return (
     <section className=" bg-white text-black">
       <div className=" py-20 container flex flex-col gap-6">
-        <h2 className="font-semibold">
+        <h2 className="">
           The complete financial <br />
           stack for your business
         </h2>

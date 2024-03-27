@@ -27,8 +27,8 @@ const Navbar = () => {
           </div>
         </div>
         <div className=" lg:inline-flex items-center gap-5 hidden">
-          <Button variant={"ghost"}>Login</Button>
-          <Button>Open an account</Button>
+          {/* <Button variant={"ghost"}>Login</Button> */}
+          <Button>Contact Us</Button>
         </div>
         <MobileSidebar />
       </nav>

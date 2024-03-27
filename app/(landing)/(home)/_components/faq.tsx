@@ -10,7 +10,9 @@ const Faq = () => {
       <div className=" py-20 container flex flex-col lg:flex-row gap-6 lg:gap-20">
         <div className=" lg:flex-1 space-y-3">
           <h2>Some questions that are frequently asked </h2>
-          <p>Some questions that are frequently asked </p>
+          <p>
+            Find answers to common inquiries about our microfinance services
+          </p>
         </div>
         <div className=" lg:flex-[1.4]">
           <Accordion type="single" collapsible className="w-full bg-black">
