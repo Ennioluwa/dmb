@@ -33,9 +33,6 @@ const Contact = () => {
     name: z.string().min(1, {
       message: "Name is required",
     }),
-    phone: z.string().min(1, {
-      message: "Phone number is required",
-    }),
     message: z.string().min(1, {
       message: "Message is required",
     }),
@@ -45,7 +42,6 @@ const Contact = () => {
     resolver: zodResolver(RegisterSchema),
     defaultValues: {
       email: "",
-      phone: "",
       name: "",
       message: "",
     },
@@ -55,7 +51,7 @@ const Contact = () => {
     setError("");
     setSuccess("");
 
-    console.log(values);
+    form.reset();
 
     setSuccess("Response received. We will get back to you shortly!");
 
@@ -119,26 +115,6 @@ const Contact = () => {
                             disabled={isPending}
                             placeholder="Where can we reach you?"
                             type="email"
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <FormField
-                    control={form.control}
-                    name="phone"
-                    render={({ field }) => (
-                      <FormItem className=" space-y-6">
-                        <FormLabel className=" text-xl font-semibold mb-3 pb-3">
-                          Phone
-                        </FormLabel>
-                        <FormControl>
-                          <Input
-                            {...field}
-                            disabled={isPending}
-                            placeholder="Phone number (optional)"
-                            type="text"
                           />
                         </FormControl>
                         <FormMessage />
