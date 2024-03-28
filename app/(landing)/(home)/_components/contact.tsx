@@ -55,6 +55,10 @@ const Contact = () => {
 
     setSuccess("Response received. We will get back to you shortly!");
 
+    setTimeout(() => {
+      setSuccess("");
+    }, 5000);
+
     startTransition(() => {
       //   register(values).then((data) => {
       //     setError(data.error);
