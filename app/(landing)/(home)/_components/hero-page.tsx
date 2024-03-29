@@ -23,9 +23,9 @@ const HeroPage = () => {
         <div className=" lg:flex-1 w-full">
           <AspectRatio ratio={1 / 1}>
             <Image
-              src="/images/hero-2.jpg"
+              src="/images/market.jpg"
               alt="Image"
-              className="rounded-lg object-cover"
+              className="rounded-lg object-cover object-left"
               fill
             />
           </AspectRatio>

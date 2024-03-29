@@ -20,26 +20,16 @@ import { Button } from "@/components/ui/button";
 import { FormError } from "@/components/form-error";
 import { FormSuccess } from "@/components/form-success";
 import { Textarea } from "@/components/ui/textarea";
+import { ContactSchema } from "@/schemas";
+import { sendContactForm } from "@/actions/mail";
 
 const Contact = () => {
   const [error, setError] = useState<string | undefined>("");
   const [success, setSuccess] = useState<string | undefined>("");
   const [isPending, startTransition] = useTransition();
 
-  const RegisterSchema = z.object({
-    email: z.string().email({
-      message: "Email is required",
-    }),
-    name: z.string().min(1, {
-      message: "Name is required",
-    }),
-    message: z.string().min(1, {
-      message: "Message is required",
-    }),
-  });
-
-  const form = useForm<z.infer<typeof RegisterSchema>>({
-    resolver: zodResolver(RegisterSchema),
+  const form = useForm<z.infer<typeof ContactSchema>>({
+    resolver: zodResolver(ContactSchema),
     defaultValues: {
       email: "",
       name: "",
@@ -47,23 +37,31 @@ const Contact = () => {
     },
   });
 
-  const onSubmit = (values: z.infer<typeof RegisterSchema>) => {
+  const onSubmit = (values: z.infer<typeof ContactSchema>) => {
     setError("");
     setSuccess("");
 
-    form.reset();
+    // form.reset();
 
-    setSuccess("Response received. We will get back to you shortly!");
-
-    setTimeout(() => {
-      setSuccess("");
-    }, 5000);
+    // setSuccess("Response received. We will get back to you shortly!");
 
     startTransition(() => {
-      //   register(values).then((data) => {
-      //     setError(data.error);
-      //     setSuccess(data.success);
-      //   });
+      sendContactForm(values)
+        .then((data) => {
+          console.log(data);
+          form.reset();
+          setError(data.error);
+          setSuccess(data.success);
+          setTimeout(() => {
+            setSuccess("");
+          }, 5000);
+        })
+        .catch((error) => {
+          console.log(error);
+
+          setError("An error has occured here");
+          setSuccess("");
+        });
     });
   };
 
