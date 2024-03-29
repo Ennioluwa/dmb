@@ -18,13 +18,13 @@ const LandingPage = () => {
       <HeroPage />
       <FinancialStack />
       <Services />
-      <Testimonials />
+      {/* <Testimonials /> */}
       {/* <Blog /> */}
       <Support />
       <Faq />
       <Contact />
       <GetStarted />
-      <Footer />
+      {/* <Footer /> */}
       <ScrollToTop />
     </div>
   );
